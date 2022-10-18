@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=UnifrakturCook&display=swap');
+body{ 
+    display: flex;
+    min-height: 50vh;
+    max-height: 80vh;
+ 
+} 
+
+.text{ 
+    background-color: #003f5c; 
+    width: 40%;
+    min-height: 80vh;
+    max-height: fit-content;
+    text-align: center;
+} 
+
+.image{ 
+width:60%; 
+min-height: 100%;
+max-height: 100%;
+background:url("../../assets/head-img.jpg");
+background-size: cover;
+background-position: bottom;
+} 
+
+.presentation{ 
+
+  font-family: 'Pirata One', cursive;
+  font-size: 3vh ;
+    
+    
+}
+
+.sujet{ 
+  font-family: 'Pirata One', cursive;
+
+}
+
+.text h1{ 
+    margin-top: 25%; 
+    color: white;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 10vh;
+    letter-spacing: 1rem;
+    
+} 
+
+.presentation-bloc{ 
+
+    min-width:  80%;
+    max-width: 60%; 
+    margin-left: 10%;
+}
+
+.sujet-bloc{ 
+    text-align: left;
+    margin-top: 12%; 
+    margin-left: 11%;
+}
