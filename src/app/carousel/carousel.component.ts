@@ -65,12 +65,14 @@ export class CarouselComponent implements OnInit {
     )
 
   };
-
-
-
-
-
-
-
-
 }
+    
+
+
+//
+// https://codepen.io/knyttneve/pen/bgvmma/
+// https://codepen.io/alphardex/pen/dyPQyKY?editors=0010
+// https://www.creativebloq.com/web-design/parallax-scrolling-1131762
+// https://colorkit.co/palette/003f5c-58508d-8a508f-bc5090-de5a79-ff6361-ff8531-ffa600/
+//
+//
