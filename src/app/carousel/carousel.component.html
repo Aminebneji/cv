@@ -1,6 +1,6 @@
 <div class="carousel">
     <div class="slides">
-      <img 
+      <img class="active"
         src="https://i.loli.net/2020/01/20/2wx8npJFiDUzu4T.png"
         alt="Stainless Steel"
       />
@@ -16,18 +16,43 @@
         src="https://i.loli.net/2020/01/19/QVY6JSEbqiOvAp1.png"
         alt="Midnight Blue"
       />
+      <img 
+      src="https://i.loli.net/2020/01/20/2wx8npJFiDUzu4T.png"
+      alt="Stainless Steel"
+    />
+    <img
+      src="https://i.loli.net/2020/01/20/YWA6RhCcESgN3Ty.png"
+      alt="Army Green"
+    />
+    <img
+      src="https://i.loli.net/2020/01/19/4HaLyI7NQRf3teO.png"
+      alt="Cranberry"
+    />
+    <img
+      src="https://i.loli.net/2020/01/19/QVY6JSEbqiOvAp1.png"
+      alt="Midnight Blue"
+    />
     </div>
     <div class="overlays">
-      <div class="bar" style="--bar-color: #bdc3c7;"></div>
-      <div class="bar" style="--bar-color: #218c74;"></div>
-      <div class="bar" style="--bar-color: #dd6b7b;"></div>
-      <div class="bar" style="--bar-color: #30465c;"></div>
+      <section class="active" style="background-color: #bdc3c7;" ></section>
+      <section  style="background-color: #218c74;" ></section>
+      <section  style="background-color: #dd6b7b;" ></section>
+      <section  style="background-color: #30465c;" ></section>
+      <section  style="background-color: #bdc3c7;" ></section>
+      <section  style="background-color: #218c74;" ></section>
+      <section  style="background-color: #dd6b7b;" ></section>
+      <section  style="background-color: #30465c;" ></section>
     </div>
-    <ul class="nav-links" >
-      <li><a href="#" (click)="onScreen(0)"  class="nav-link">Stainless Steel</a></li>
-      <li><a href="#" (click)="onScreen(1)" class="nav-link">Army Green</a></li>
-      <li><a href="#" (click)="onScreen(2)"  class="nav-link">Cranberry</a></li>
-      <li><a href="#" (click)="onScreen(3)"  class="nav-link">Midnight Blue</a></li>
-    </ul> 
+    <div class="nav-links" >
+      <a  (click)="onScreen(0)"  class="nav-link">Stainless Steel</a>
+      <a  (click)="onScreen(1)"  class="nav-link">Army Green</a>
+      <a  (click)="onScreen(2)"  class="nav-link">Cranberry</a>
+      <a  (click)="onScreen(3)"  class="nav-link">Midnight Blue</a>
+      <a  (click)="onScreen(4)"  class="nav-link">Stainless Steel</a>
+      <a  (click)="onScreen(5)"  class="nav-link">Army Green</a>
+      <a  (click)="onScreen(6)"  class="nav-link">Cranberry</a>
+      <a  (click)="onScreen(7)"  class="nav-link">Midnight Blue</a>
+
+    </div> 
   </div>
   

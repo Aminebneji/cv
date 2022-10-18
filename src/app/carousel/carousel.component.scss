@@ -11,7 +11,9 @@ body {
 
 .carousel {
   position: relative;
-  display: flex;
+  display: flex; 
+  margin-top: 15%;
+  margin-left: 15%;
 
   .slides {
     position: relative;
@@ -33,17 +35,20 @@ body {
 
   .overlays {
     position: relative;
-    width: 36em;
+    width: 37em;
     height: 18em;
 
-    .bar {
+    section {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: var(--bar-color);
-      transform-origin: left;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
     }
   }
 
@@ -66,6 +71,7 @@ body {
 
       &:hover {
         color: #1c1e1f;
+        cursor: pointer;
       }
 
       &.active {
