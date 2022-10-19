@@ -1,57 +1,73 @@
 .head {
     display: flex;
     margin: 0;
+    background-color: #3d4b91;
+
+}
+
+// font-family: 'Cousine', monospace;
+// font-family: 'Fira Sans', sans-serif;
+
+.left {
+    width: 70%;
+    min-height: 80vh;
+    text-align: center;
+
+    h2 {
+        margin-left: 45vh;
+        margin-top: 7vh;
+        margin-bottom: 10vh;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 90px;
+        color: white;
+        font-weight: 800;
+
+    }
+
+    .moi {
+
+        margin-bottom: 17vh;
+    }
+
+    .ligne {
+        border-left: 5px solid #008585;
+        width: 50%;
+        height: 1055%;
+        margin-left: 90vh;
+
+    }
+
 }
 
 .right {
-    width: 33.3%;
+    width: 30%;
     min-height: 80vh;
-    background-color: #c1c1fe;
 
 
-    h2 {
-        margin-left: 12%;
-        margin-top: 5%;
-        color: #e0e0d3;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 55px;
-        font-weight: 900;
-        text-shadow: black 0.5px 0.5px 0.5px;
+    p {
+        margin-right: 10vh;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+        font-family: 'Cousine', monospace;
+        font-size: 20px;
+        color: white;
+        line-height: 1.5;
+        font-weight: 700;
     }
 
-    .Simplon {
-        color: #e0e0d3;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 25px;
-        font-weight: 900;
-        text-shadow: black 0.5px 0.5px 0.5px;
+    .contacts {
+        list-style: square;
+        font-family: 'Cousine', monospace;
+        font-size: 20px;
+        color: white;
+        font-style: italic;
+        font-weight: 700;
+        margin-right: 15vh;
+        text-align: left;
 
-        h2 {
-            margin-left: 10%;
-            font-size: 35px;
+        li {
+            margin-bottom: 2vh;
         }
-
-        p {
-            margin-left: 10%;
-            font-size: 20px;
-
-        }
-
     }
-
-
-}
-
-.middle {
-    width: 33.3%;
-    min-height: 80vh;
-    background-color: #d0d0e8;
-
-}
-
-.left {
-    width: 33.3%;
-    min-height: 80vh;
-    background-color: #e0e0d3;
 
 }
