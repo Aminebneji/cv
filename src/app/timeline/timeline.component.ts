@@ -31,20 +31,20 @@ export class TimelineComponent implements OnInit {
 
     // Lors du scroll dans la fenêtre
     window.onscroll = function (e: any) {
-      console.log(window.scrollY)
       for (let i = 0; i < timelineOffsets.length; i++) {
-        // console.log(timelineOffsets[i])
-
+       
         let itemImgUrl = `url('${timelineItems[i].querySelector('img.timeline__img').src}')`;
 
-        if (window.scrollY > timelineOffsets[i]) {
+        if (window.scrollY  == timelineOffsets[i] + 150 || timelineOffsets[i] + 150 ) {
           timelineItems[i].classList.add('timeline-item--active')
           timeline.style.backgroundImage = itemImgUrl;
         }
-        if (window.scrollY >= timelineOffsets[i + 1]) {
+        if (window.scrollY > timelineOffsets[i]) {
           timelineItems[i].classList.remove('timeline-item--active')
           timeline.style.backgroundImage = 'none';
-        }
+        } 
+      console.log(window.scrollY , "TO"+timelineOffsets[i] , "TI"+timelineItems[i])
+
       }
     }
 
