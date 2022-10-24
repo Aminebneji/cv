@@ -1,57 +1,59 @@
-import { isNgTemplate } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
-import { windowToggle } from 'rxjs';
+
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit(): void {
+  }
 
+  ngAfterViewChecked() {
 
     let timeline: any = document.querySelector('.timeline-container');
-    let timelineItems: any = document.querySelectorAll('.timeline-item');
-    let timelineOffsets: any[] = [];
+    let timelineItems = document.querySelectorAll('.timeline-item');
+    let timelineOffsets: Array<number> = [];
 
 
-    // Appliquer le style active sur le premier item
-    timelineItems[0].classList.add('timeline-item--active');
-    // timeline.style.backgroundImage = `url('${timelineItems[0].querySelector('img.timeline__img').src}')`;
-
-    // Récupération du offset de chaque timeline
+    // offset of each timelines
     for (let i = 0; i < timelineItems.length; i++) {
-      let item = timelineItems[i];
+      let item: any = timelineItems[i];
       timelineOffsets[i] = item.offsetTop;
     }
 
-    // Lors du scroll dans la fenêtre
-    window.onscroll = function (e: any) {
+
+    // when we scroll on the window
+    window.onscroll = function (e) {
       for (let i = 0; i < timelineOffsets.length; i++) {
-       
-        let itemImgUrl = `url('${timelineItems[i].querySelector('img.timeline__img').src}')`;
 
-        if (window.scrollY  == timelineOffsets[i] + 150 || timelineOffsets[i] + 150 ) {
-          timelineItems[i].classList.add('timeline-item--active')
-          timeline.style.backgroundImage = itemImgUrl;
+
+
+        if (window.scrollY < timeline.offsetTop + timelineOffsets[i]) {
+          timelineItems[i].classList.remove('timeline-item--active');
+          timeline.style.backgroundImage = 'none'
         }
-        if (window.scrollY > timelineOffsets[i]) {
-          timelineItems[i].classList.remove('timeline-item--active')
-          timeline.style.backgroundImage = 'none';
-        } 
-      console.log(window.scrollY , "TO"+timelineOffsets[i] , "TI"+timelineItems[i])
+        if (window.scrollY > timeline.offsetTop + timelineOffsets[i]) {
+          timelineItems[i].classList.add('timeline-item--active');
+          timeline.style.backgroundImage = `src('${timelineItems[i].querySelector('timeline__img :before')}')`;
 
+        }
+        if (window.scrollY >= timeline.offsetTop + timelineOffsets[i + 1]) {
+          timelineItems[i].classList.remove('timeline-item--active'); 
+          timeline.style.backgroundImage = 'none'
+        }
+        console.log(window.scrollY, timelineOffsets[i], i, i + 1)
       }
+    }, {
+      passive: true
     }
-
-
   }
+
+
 }
-
-
 
 
