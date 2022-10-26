@@ -1,60 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Six+Caps&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=UnifrakturCook&display=swap');
-body{ 
+.head {
     display: flex;
-    min-height: 50vh;
-    max-height: 80vh;
- 
-} 
+    margin: 0;
+    background-color: #3d4b91;
 
-.text{ 
-    background-color: #003f5c; 
-    width: 40%;
+}
+
+// font-family: 'Cousine', monospace;
+// font-family: 'Fira Sans', sans-serif;
+
+.left {
+    width: 70%;
     min-height: 80vh;
-    max-height: fit-content;
     text-align: center;
-} 
 
-.image{ 
-width:60%; 
-min-height: 100%;
-max-height: 100%;
-background:url("../../assets/head-img.jpg");
-background-size: cover;
-background-position: bottom;
-} 
+    h2 {
+        margin-left: 45vh;
+        margin-top: 7vh;
+        margin-bottom: 10vh;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 90px;
+        color: white;
+        font-weight: 800;
 
-.presentation{ 
+    }
 
-  font-family: 'Pirata One', cursive;
-  font-size: 3vh ;
-    
-    
+    .moi {
+
+        margin-bottom: 17vh;
+    }
+
+    .ligne {
+        border-left: 5px solid #008585;
+        width: 50%;
+        height: 1055%;
+        margin-left: 90vh;
+
+    }
+
 }
 
-.sujet{ 
-  font-family: 'Pirata One', cursive;
+.right {
+    width: 30%;
+    min-height: 80vh;
 
-}
 
-.text h1{ 
-    margin-top: 25%; 
-    color: white;
-    font-family: 'Six Caps', sans-serif;
-    font-size: 10vh;
-    letter-spacing: 1rem;
-    
-} 
+    p {
+        margin-right: 10vh;
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+        font-family: 'Cousine', monospace;
+        font-size: 20px;
+        color: white;
+        line-height: 1.5;
+        font-weight: 700;
+    }
 
-.presentation-bloc{ 
+    .contacts {
+        list-style: square;
+        font-family: 'Cousine', monospace;
+        font-size: 20px;
+        color: white;
+        font-style: italic;
+        font-weight: 700;
+        margin-right: 15vh;
+        text-align: left;
 
-    min-width:  80%;
-    max-width: 60%; 
-    margin-left: 10%;
-}
+        li {
+            margin-bottom: 2vh;
+        }
+    }
 
-.sujet-bloc{ 
-    text-align: left;
-    margin-top: 12%; 
-    margin-left: 11%;
 }
