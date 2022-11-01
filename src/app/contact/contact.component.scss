@@ -1,0 +1,18 @@
+.modal {
+
+    width: 0;
+    height: 0;
+    z-index: -99999;
+
+    &.none {
+        opacity: 0;
+    }
+
+    &.vision {
+        width: 100vh;
+        height: 100vh;
+        z-index: 99999;
+        background-color: blue;
+        opacity: 1;
+    }
+}
