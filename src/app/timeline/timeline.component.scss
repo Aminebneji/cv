@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
+
 // Responsive
 @mixin responsive() {
     @media only screen and (max-width: 767px) {
         @content;
     }
 }
+
 .timeline {
     display: flex;
     margin: 0 auto;
@@ -12,6 +14,7 @@
     flex-direction: column;
     max-width: 700px;
     position: relative;
+
     &__content {
         &-title {
             font-weight: normal;
@@ -22,6 +25,7 @@
             font-family: 'Cousine', monospace;
             color: #fff;
         }
+
         &-desc {
             margin: 0;
             font-size: 15px;
@@ -32,6 +36,7 @@
             line-height: 25px;
         }
     }
+
     &:before {
         position: absolute;
         left: 50%;
@@ -40,10 +45,12 @@
         margin-left: -1px;
         content: "";
         background: rgba(255, 255, 255, .07);
+
         @include responsive() {
             left: 40px;
         }
     }
+
     &-item {
         padding: 40px 0;
         opacity: .3;
@@ -54,7 +61,7 @@
         display: flex;
         position: relative;
         transform: translateY(-80px);
-        
+
 
         &:before {
             content: attr(data-text);
@@ -71,8 +78,10 @@
             opacity: 0;
             right: calc(-100% - 56px);
         }
+
         &:nth-child(even) {
             align-self: flex-end;
+
             &:before {
                 right: auto;
                 text-align: right;
@@ -83,24 +92,29 @@
                 padding-right: 15px;
             }
         }
+
         &--active {
             opacity: 1;
             transform: translateY(0);
             filter: blur(0px);
+
             &:before {
                 top: 50%;
                 transition: .3s all .2s;
                 opacity: 1;
             }
+
             .timeline__content-title {
                 margin: -50px 0px 20px 0px;
-               
+
             }
         }
+
         @include responsive() {
             align-self: baseline !important;
             width: 100%;
             padding: 0 30px 150px 80px;
+
             &:before {
                 left: 10px !important;
                 padding: 0 !important;
@@ -109,15 +123,18 @@
                 width: 60px;
                 border: none !important;
             }
+
             &:last-child {
                 padding-bottom: 40px;
             }
         }
     }
+
     &__img {
         max-width: 80%;
         box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
     }
+
     &-container {
         width: 100%;
         position: relative;
@@ -125,6 +142,7 @@
         transition: .3s ease 0s;
         background-attachment: fixed;
         background-size: cover;
+
         &:before {
             position: absolute;
             left: 0;
@@ -135,11 +153,13 @@
             content: "";
         }
     }
+
     &-header {
         width: 100%;
         text-align: center;
         margin-bottom: 80px;
         position: relative;
+
         &__title {
             color: #fff;
             font-size: 46px;
@@ -147,6 +167,7 @@
             font-weight: normal;
             margin: 0;
         }
+
         &__subtitle {
             color: rgba(255, 255, 255, .5);
             font-family: 'Cousine', monospace;
