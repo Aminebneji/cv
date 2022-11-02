@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core'; 
+import { Component, Injectable } from '@angular/core'; 
 
 
 @Injectable({
@@ -31,6 +31,7 @@ export class GeneralServiceService {
 
     btnOpen?.addEventListener("click", show);
     btnClose?.addEventListener("click", hide); 
+
   }
    
 }

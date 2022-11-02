@@ -18,9 +18,9 @@
 
 .modalContent { 
     width: 55%;
-    height: 55%;
+    height: 85%;
     margin-left: 25%;
-    margin-top: 15%;
+    margin-top: 5%;
     background-color: rgb(48, 45, 45);
     border: none;
     color: white;  
@@ -44,6 +44,11 @@
       
     }
 
+    svg{ 
+        width: 20px;
+        height: 20px;
+        
+    }
     input{
         text-align: center;
         font-size: 13px;
@@ -53,7 +58,7 @@
         height: 35px;
         background:#3d4b91;
         color: white;
-        border: 1px solid black;
+        border: 2px solid white;
         margin-left: 19% ;
 
         
@@ -71,7 +76,7 @@
         height: 35px;
         background:#3d4b91;
         color: white;
-        border: 1px solid black;
+        border: 2px solid white;
        width: 80%; 
        height: 50%;
        margin-left: 9%;
