@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactComponent } from './contact/contact.component';
+import { GeneralServiceService } from './general-service.service';
 
 
 @Component({
@@ -10,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 export class AppComponent {
   title = 'Curriculum-vitae';
 
-}
+} 
+
+GeneralServiceService.modaleStuff;
+
 
 

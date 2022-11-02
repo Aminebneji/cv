@@ -1,4 +1,22 @@
 .button {
+    
     z-index: 99999;
     position: fixed;
+    margin: 3%;
+    color: #3d4b91;
+    background-color: white;
+    border: 2px solid ;
+    border-color: white;
+    letter-spacing: .08rem;
+    border-radius: .35rem;
+    cursor: pointer;
+
+    &:hover{ 
+        color: white;
+        background-color: #3d4b91;
+        border: 2px solid ;
+        border-color: white;
+        transition: ease-in-out .3s;
+    }
+
 }
