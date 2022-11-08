@@ -14,13 +14,13 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
- 
-  GeneralServiceService.modaleStuff();
-   
 
-  }; 
+    GeneralServiceService.modaleStuff();
 
- 
+
+  };
+
+
 }
 
 

@@ -1,27 +1,30 @@
-
-    
 <section class="modal none">
     <div class="modalContent">
-        <button class=" button submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg> </button>
+        <button class=" button close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+            </svg> </button>
         <h2>Contact</h2>
         <p>Contactez moi ! n'hésitez pas </p>
-        <div class="top">
-            <div class="one">
-                <input type="text" placeholder="Name">
-                <input class="longer" type="text" placeholder="Subject">
+        <form class="modalForm">
+            <div class="top">
+                <div class="one">
+                    <input type="text" name="Nom" placeholder="Nom">
+                    <input class="longer" type="text" name="Prenom" placeholder="Prenom">
+                </div>
+                <div class="two">
+                    <input type="text" name="Phone" placeholder="Phone Number">
+                    <input class="longer" type="email" name="Mail" placeholder="@Mail">
+                </div>
             </div>
-            <div class="two">
-                <input type="text" placeholder="Phone Number">
-                <input class="longer" type="email" placeholder="@Mail">
-            </div>
-        </div>
-        <div class="bottom">
-                <textarea style="resize: none ;"
+            <div class="bottom">
+                <textarea name="messageContent" style="resize: none ;"
                     placeholder="Contactez moi !! ce message est déstiné à être envoyé sur une boîte mail après que vous ayez appuyé sur 'envoyer'."></textarea>
-            <button class=" button submit">envoyer</button>
-        </div>
+                <button class=" button submit ">envoyer</button>
+            </div>
+        </form>
+    </div>
 
-        </div>
-   
 
 </section>

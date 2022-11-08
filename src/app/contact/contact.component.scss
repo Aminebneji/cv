@@ -1,32 +1,35 @@
 .modal {
-   
-    
+
+
     position: fixed;
     width: 100%;
     height: 100%;
+
     &.none {
         opacity: 0;
+        z-index: -99999;
+
     }
 
     &.vision {
-       
+
         z-index: 99999;
         background-color: rgba(0, 0, 0, 0.39);
         opacity: 1;
     }
 }
 
-.modalContent { 
+.modalContent {
     width: 55%;
     height: 85%;
     margin-left: 25%;
     margin-top: 5%;
     background-color: rgb(48, 45, 45);
     border: none;
-    color: white;  
+    color: white;
 
 
-    h2{
+    h2 {
         font-size: 60px;
         font-family: 'Cousine', monospace;
         letter-spacing: 5px;
@@ -34,83 +37,90 @@
         margin: 0;
     }
 
-    p{
- 
+    p {
+
         font-size: 20px;
         font-family: 'Cousine', monospace;
         letter-spacing: 5px;
         color: rgba(228, 220, 220, 0.705);
         text-align: center;
-      
+
     }
 
-    svg{ 
+    svg {
         width: 20px;
         height: 20px;
-        
+
     }
-    input{
+
+    input {
         text-align: center;
         font-size: 13px;
         font-family: 'Cousine', monospace;
         letter-spacing: 2px;
-        width: 150px ;
+        width: 150px;
         height: 35px;
-        background:#3d4b91;
+        background: #3d4b91;
         color: white;
         border: 2px solid white;
-        margin-left: 19% ;
+        margin-left: 19%;
 
-        
+
     }
-    .longer{ 
-        width: 290px  ;
-            
-        }
 
-    textArea{ 
+    .longer {
+        width: 290px;
+
+    }
+
+    textArea {
         font-size: 15px;
         font-family: 'Cousine', monospace;
         letter-spacing: 5px;
         width: 150px;
         height: 35px;
-        background:#3d4b91;
+        background: #3d4b91;
         color: white;
         border: 2px solid white;
-       width: 80%; 
-       height: 50%;
-       margin-left: 9%;
+        width: 80%;
+        height: 50%;
+        margin-left: 9%;
     }
 
-    .top{ 
+    .top {
         justify-content: center;
         width: 100%;
         height: 30%;
 
-    .one{ 
-        height: 50%;
-        margin-left: 7%;
-    }    
+        .one {
+            height: 50%;
+            margin-left: 7%;
+        }
 
-    .two{ 
-        height: 50%;
-        margin-left: 7%;
-        
-    }
+        .two {
+            height: 50%;
+            margin-left: 7%;
+
+        }
     }
 
-    .bottom{
+    .bottom {
         width: 100%;
         height: 70%;
 
-        textArea{
-        height: 50%;    
-        width: 90%;
-        margin-left: 5%;
+        textArea {
+            height: 50%;
+            width: 90%;
+            margin-left: 5%;
 
         }
-        }
     }
+}
+
+.modalForm {
+    width: 100%;
+    height: 100%;
+}
 
 
 .button {
@@ -121,16 +131,16 @@
     height: 35px;
     color: #3d4b91;
     background-color: white;
-    border: 2px solid  ;
+    border: 2px solid;
     border-color: #3d4b91;
     letter-spacing: .08rem;
     border-radius: .35rem;
     cursor: pointer;
 
-    &:hover{ 
+    &:hover {
         color: white;
         background-color: #3d4b91;
-        border: 2px solid ;
+        border: 2px solid;
         border-color: white;
         transition: ease-in-out .3s;
     }
