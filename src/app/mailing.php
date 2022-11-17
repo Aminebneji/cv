@@ -1,5 +1,4 @@
 <?php
-echo 'Current PHP version: '. Phpversion();
 $to = "aminebneji@gmail.com";
 $subject = "Tu as reçu un message depuis ton site !";
 
@@ -9,6 +8,8 @@ $mail = addslashes($_POST['Mail']);
 $phone = addslashes($_POST['Phone']);
 $msg = addslashes($_POST['messageContent']);
 
+var_dump($_POST);
+die;
 
 $message = "tu as reçus un message de la part de :" . $prenom . ".\n";
 $message . "tu peux le contacter au :" . $Phone . ".\n\n";

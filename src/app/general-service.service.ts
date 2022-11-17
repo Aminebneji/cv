@@ -31,30 +31,29 @@ export class GeneralServiceService {
     btnClose?.addEventListener("click", hide);
 
 
-    let button = document.querySelector('.submit')
 
-    function sendMail() {
-      console.log("SendMail")
-      let form: any = document.querySelector('form');
 
-      form.onSubmit = function (e: any) {
-        e.preventDefault();
+    console.log("SendMail")
+    let form: any = document.querySelector('form');
 
-        let data = new FormData(form);
+    form.onsubmit = function (e: any) {
+      e.preventDefault();
 
-        fetch('http://localhost:4200', {
-          method: 'POST',
-          body: data
+      let data = new FormData(form);
+
+      fetch('http://localhost/mailing.php', {
+        method: 'POST',
+        body: data,
+        mode: "no-cors",
+        headers: {
+          'Access-Control-Allow-Origin': '*'
+        }
+      })
+        .then(res => res.json())
+        .then(res => {
+          console.log(res.message)
         })
-          .then(res => res.json())
-          .then(res => {
-            console.log(res.message)
-          })
-          .catch(err => alert('Error : ' + err))
-      }
-
+        .catch(err => alert('Error : ' + err))
     };
-    button?.addEventListener("click", sendMail);
-
   }
 }
