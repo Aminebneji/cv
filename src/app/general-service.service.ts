@@ -1,4 +1,4 @@
-import { Component, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 
 @Injectable({
@@ -42,7 +42,7 @@ export class GeneralServiceService {
 
         let data = new FormData(form);
 
-        fetch('http://localhost:4200/mailing.php', {
+        fetch('http://localhost:4200', {
           method: 'POST',
           body: data
         })
