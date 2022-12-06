@@ -18,12 +18,12 @@
     &__content {
         &-title {
             font-weight: normal;
-            font-size: 56px;
+            font-size: 35px;
             margin: -10px 0 0 0;
             transition: .4s;
             box-sizing: border-box;
-            font-family: 'Cousine', monospace;
-            color: #fff;
+            font-family: 'Press Start 2P';
+            color: rgb(245, 168, 24);
         }
 
         &-desc {
@@ -161,20 +161,12 @@
         position: relative;
 
         &__title {
-            color: #fff;
+            color: rgb(245, 168, 24);
+            font-family: 'Press Start 2P';
             font-size: 46px;
-            font-family: 'Fira Sans', sans-serif;
             font-weight: normal;
             margin: 0;
         }
 
-        &__subtitle {
-            color: rgba(255, 255, 255, .5);
-            font-family: 'Cousine', monospace;
-            font-size: 16px;
-            letter-spacing: 5px;
-            margin: 10px 0 0 0;
-            font-weight: normal;
-        }
     }
 }

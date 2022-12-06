@@ -25,8 +25,10 @@
     }
 
     .moi {
-
-        margin-bottom: 17vh;
+        margin-left: -65%;
+        margin-top: -30%;
+        max-width: 50%;
+        max-height: 50%;
     }
 
     // .ligne {
@@ -36,6 +38,14 @@
     //     margin-left: 101.5vh;
 
     // }
+
+    p {
+        margin-left: 45vh;
+        font-size: 25px;
+        color: rgb(245, 168, 24);
+        font-weight: 800;
+        font-family: 'Press Start 2P';
+    }
 
 }
 
@@ -47,7 +57,7 @@
     p {
         margin-right: 10vh;
         margin-top: 10vh;
-        margin-bottom: 15vh;
+        margin-bottom: 5vh;
         font-family: 'Cousine', monospace;
         font-size: 20px;
         color: white;
@@ -57,16 +67,20 @@
 
     .contacts {
         list-style: square;
-        font-family: 'Cousine', monospace;
+        letter-spacing: 0.1em;
+        font-family: 'Press Start 2P';
         font-size: 20px;
-        color: white;
-        font-style: italic;
+        color: rgb(245, 168, 24);
         font-weight: 700;
         margin-right: 15vh;
         text-align: left;
 
         li {
             margin-bottom: 2vh;
+        }
+
+        p {
+            margin: 0;
         }
     }
 

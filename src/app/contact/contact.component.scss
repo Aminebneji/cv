@@ -14,7 +14,7 @@
     &.vision {
 
         z-index: 99999;
-        background-color: rgba(0, 0, 0, 0.39);
+        background-color: rgba(0, 0, 0, 0.866);
         opacity: 1;
     }
 }
@@ -24,14 +24,14 @@
     height: 85%;
     margin-left: 25%;
     margin-top: 5%;
-    background-color: rgb(48, 45, 45);
+    background-color: #3d4b91;
     border: none;
-    color: white;
+    color: rgb(245, 168, 24);
 
 
     h2 {
         font-size: 60px;
-        font-family: 'Cousine', monospace;
+        font-family: 'Press Start 2P';
         letter-spacing: 5px;
         text-align: center;
         margin: 0;
@@ -62,7 +62,7 @@
         height: 35px;
         background: #3d4b91;
         color: white;
-        border: 2px solid white;
+        border: 2px solid rgb(245, 168, 24);
         margin-left: 19%;
 
 
@@ -81,7 +81,7 @@
         height: 35px;
         background: #3d4b91;
         color: white;
-        border: 2px solid white;
+        border: 2px solid rgb(245, 168, 24);
         width: 80%;
         height: 50%;
         margin-left: 9%;

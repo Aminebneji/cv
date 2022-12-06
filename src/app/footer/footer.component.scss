@@ -1,9 +1,9 @@
 .footer {
     z-index: 999999999;
-    height: 30vh;
+    height: 40vh;
     background-color: #3d4b91;
     font-family: 'Fira Sans', sans-serif;
-    border-top: rgba(243, 238, 238, 0.568) solid;
+    border-top: rgb(245, 168, 24) solid;
     border-width: 3px;
 
 
@@ -19,8 +19,33 @@
     }
 
     p {
-        margin-top: 3%;
+        margin-top: 5%;
         margin-left: 85%;
         color: rgba(243, 238, 238, 0.568);
     }
+
+    .goUp {
+        background-color: white;
+    }
+
+    .button {
+        margin: 3%;
+        color: #3d4b91;
+        background-color: white;
+        border: 2px solid;
+        border-color: #3d4b91;
+        letter-spacing: .08rem;
+        border-radius: .35rem;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            background-color: #3d4b91;
+            border: 2px solid;
+            border-color: white;
+            transition: ease-in-out .3s;
+        }
+
+    }
+
 }
