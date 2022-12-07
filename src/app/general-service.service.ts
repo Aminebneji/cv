@@ -41,7 +41,7 @@ export class GeneralServiceService {
 
       let data = new FormData(form);
 
-      fetch('http://localhost/mailing.php', {
+      fetch('src\app\mailing.php', {
         method: 'POST',
         body: data,
         mode: "no-cors",
