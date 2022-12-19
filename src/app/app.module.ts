@@ -8,6 +8,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { GeneralServiceService } from './general-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,10 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
-
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GeneralServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

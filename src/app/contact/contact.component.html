@@ -5,26 +5,25 @@
                 <path
                     d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
             </svg> </button>
+
         <h2>Contact</h2>
         <p>Contactez moi ! n'hésitez pas </p>
-        <form method="post" class="modalForm">
+        <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" class="modalForm">
             <div class="top">
                 <div class="one">
-                    <input type="text" name="Nom" placeholder="Nom">
-                    <input class="longer" type="text" name="Prenom" placeholder="Prenom">
+                    <input name="Name" placeholder="Nom" formControlName="Name">
+                    <input class="longer" name="Firstname" formControlName="Firstname" placeholder="Prenom">
                 </div>
                 <div class="two">
-                    <input type="text" name="Phone" placeholder="Phone Number">
-                    <input class="longer" type="email" name="Mail" placeholder="@Mail">
+                    <input name="Phone" placeholder="Telephone" formControlName="Phone">
+                    <input class="longer" name="Email" placeholder="@Mail" formControlName="Email" type="email">
                 </div>
             </div>
             <div class="bottom">
-                <textarea name="messageContent" style="resize: none ;"
+                <textarea formControlName="messageContent" name="messageContent" style="resize: none ;"
                     placeholder="Contactez moi !! ce message est déstiné à être envoyé sur une boîte mail après que vous ayez appuyé sur 'envoyer'."></textarea>
-                <button class="button submit" type="submit">envoyer</button>
+                <button [disabled]="!FormData.valid" class="button submit" type="submit">envoyer</button>
             </div>
         </form>
     </div>
-
-
 </section>

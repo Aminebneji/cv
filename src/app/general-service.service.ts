@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http'
+import { map } from 'rxjs';
 
 
 @Injectable({
@@ -6,8 +8,9 @@ import { Injectable } from '@angular/core';
 })
 export class GeneralServiceService {
 
+  private api = 'https://mailthis.to/Aminebneji'
 
-  constructor() {
+  constructor(private http: HttpClient) {
 
   }
 
@@ -30,30 +33,19 @@ export class GeneralServiceService {
     btnOpen?.addEventListener("click", show);
     btnClose?.addEventListener("click", hide);
 
+  };
 
-
-
-    console.log("SendMail")
-    let form: any = document.querySelector('form');
-
-    form.onsubmit = function (e: any) {
-      e.preventDefault();
-
-      let data = new FormData(form);
-
-      fetch('src\app\mailing.php', {
-        method: 'POST',
-        body: data,
-        mode: "no-cors",
-        headers: {
-          'Access-Control-Allow-Origin': '*'
+  PostMessage(input: any) {
+    return this.http.post(this.api, input, { responseType: 'text' }).pipe(
+      map(
+        (response: any) => {
+          if (response) {
+            return response;
+          }
+        }, (error: any) => {
+          return error;
         }
-      })
-        .then(res => res.json())
-        .then(res => {
-          console.log(res.message)
-        })
-        .catch(err => alert('Error : ' + err))
-    };
+      )
+    )
   }
 }
